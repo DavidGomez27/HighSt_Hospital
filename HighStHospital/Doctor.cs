@@ -17,7 +17,10 @@ namespace HighStHospital
             this.specialtyArea = specialtyArea;
         }
 
-
+        public override string GetInfo()
+        {
+            return base.GetInfo() + specialtyArea;
+        }
 
 
     }

@@ -23,7 +23,10 @@ namespace HighStHospital
         }
 
 
-
+        public override string GetInfo()
+        {
+            return base.GetInfo() + department + " " + "\nOn phone? - " + onPhone;
+        }
 
 
     }

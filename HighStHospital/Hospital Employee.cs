@@ -30,6 +30,10 @@ namespace HighStHospital
             this.employeeNumber = employeeNumber;
         }
 
+        public virtual string GetInfo()
+        {
+            return employeeName + " " + employeeNumber + " ";
+        }
 
 
 

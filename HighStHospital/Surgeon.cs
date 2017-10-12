@@ -24,7 +24,10 @@ namespace HighStHospital
         }
 
 
-
+        public override string GetInfo()
+        {
+            return base.GetInfo() + specialtyArea + "\nCurrently operating? - " + isOperating;
+        }
 
 
 

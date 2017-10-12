@@ -13,7 +13,7 @@ namespace HighStHospital
 
 
 
-        public Nurse(string employeeName, int employeeNumber, int numberOfPatients, string department)
+        public Nurse(string employeeName, int employeeNumber, string department, int numberOfPatients)
         {
             this.employeeName = employeeName;
             this.employeeNumber = employeeNumber;
@@ -22,7 +22,9 @@ namespace HighStHospital
         }
 
 
-
+        public override string GetInfo()
+        {
+            return base.GetInfo() + department + " " + "\nNumber of patients - " + numberOfPatients;        }
 
 
     }
