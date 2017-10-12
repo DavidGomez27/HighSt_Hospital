@@ -6,16 +6,22 @@ using System.Threading.Tasks;
 
 namespace HighStHospital
 {
-    class Doctor : Hospital_Employee
+    class Receptionist : Hospital_Employee
     {
 
-        
-         public Doctor(string employeeName, int employeeNumber, string specialtyArea)
+        public bool onPhone;
+
+
+
+        public Receptionist(string employeeName, int employeeNumber, string department, bool onPhone)
         {
             this.employeeName = employeeName;
             this.employeeNumber = employeeNumber;
-            this.specialtyArea = specialtyArea;
+            this.department = department;
+            this.onPhone = onPhone;
+          
         }
+
 
 
 

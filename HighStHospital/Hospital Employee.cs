@@ -15,6 +15,7 @@ namespace HighStHospital
         protected string department;
 
         public string EmployeeName { get; set; }
+        public int EmployeeNumber { get; set; }
 
 
         public Hospital_Employee()
